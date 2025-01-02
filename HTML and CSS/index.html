@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <ul class="navmenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutUs</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="text" class="search-box" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <ul class = "navmenu">
+            <li><a href="#">SignIn</a></li>
+            <li><a href="#">SignUp</a></li>
+        </ul>
+
+        <div class="nav-icon">    
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <div class="dropdownMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutUs</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">SignIn</a></li>
+            <li><a href="#">SignUp</a></li>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore the World Together <br> with Premium Travel</h1>
+            <p>Get up to 50% Discount</p>
+            <div class="button-wrapper">
+                <button class="book-button">
+                    <p>Book Now</p>
+                    <span class="icon"><i class="fas fa-arrow-right"></i></span> <!-- Unicode for a magnifying glass -->
+                  </button>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Booking Section -->
+    <div class="class-wrap">
+        <div class="tabss">
+            <button class="tab">Business Class</button>
+            <button class="tab">First Class</button>
+        </div>
+        <div class="flight-search">
+            <div class="search-wrap">
+                <div class="ticket-type">
+                    <button class="ticket-btn">One Way</button>
+                    <button class="ticket-btn">Round Trip</button>
+                    <button class="ticket-btn">Multicity</button>
+                </div>
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="departure">Departure City</label>
+                        <span class="icon"><i class="fas fa-plane-departure"></i></span>
+                        <input type="text" id="departure" placeholder="Pakistan">
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival">Arrival City</label>
+                        <span class="icon"><i class="fas fa-plane-arrival"></i></span>
+                        <input type="text" id="arrival" placeholder="Dubai">
+                    </div>
+                    <div class="form-group">
+                        <label for="departure-date">Departure Date</label>
+                        <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                        <input type="date" id="departure-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="arrival-date">Arrival Date</label>
+                        <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                        <input type="date" id="arrival-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <input type="number" id="passengers" min="1" value="1">
+                    </div>
+                    <div class="searchbtn-wrapper">
+                        <button class="book-button">
+                            <p>Search Flight</p>
+                            <span class="icon-search"><i class="fas fa-search"></i></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p>These are the simple procedures that will make your purchesing process super easy <br>and smooth. And will help you to get your flight easily.</p>
+        <div class="steps-container">
+            <div class="steps-block">
+                <img class="side-img" src="img/side-img.png" alt="">
+                <div class="steps">
+                    <div class="step">
+                        <span>1</span>
+                        <p>Search Flights</p>
+                    </div>
+                    <div class="step">
+                        <span>2</span>
+                        <p>Fill Contact Form</p>
+                    </div>
+                    <div class="step">
+                        <span>3</span> 
+                        <p>Choose Your Airline</p>
+                    </div>
+                    <div class="step">
+                        <span>4</span> 
+                        <p>Booking in 10 Minutes!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <video width="100%" height="400" controls controlsList="nodownload nofullscreen noremoteplayback">
+                    <source src="img/Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                 <div class="social-links">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                 </div>
+                    <ul>
+                        <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Submit Article</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Freebies</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="#">(888) 231 4522 258</a></li>
+                        <li><a href="#">3129 Doctors Drive, Los Angeles, California, USA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Gallery Showcase</h4>
+                    <div class="social-links">
+                     <img src="img/img1.png" alt="Gallery Image">
+                     <img src="img/img2.png" alt="Gallery Image">
+                     <img src="img/img3.png" alt="Gallery Image">
+                     <img src="img/img4.png" alt="Gallery Image">
+                     <img src="img/img5.png" alt="Gallery Image">
+                     <img src="img/img6.png" alt="Gallery Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="end-line"></div>
+    
+    <script src="script.js"></script>
+    <!--Nav-Icon display script-->
+    <script>
+        const toggleBtn = document.querySelector('.nav-icon');
+        const menuIcon = document.querySelector('#menu-icon');
+        const dropdownMenu = document.querySelector('.dropdownMenu');
+    
+        toggleBtn.onclick = function() {
+            dropdownMenu.classList.toggle('open');
+            
+            // Toggle between menu and close icons
+            if (dropdownMenu.classList.contains('open')) {
+                menuIcon.classList.remove('bx-menu');
+                menuIcon.classList.add('bx-x');
+            } else {
+                menuIcon.classList.remove('bx-x');
+                menuIcon.classList.add('bx-menu');
+            }
+        }
+    </script>
+</body>
+</html>
